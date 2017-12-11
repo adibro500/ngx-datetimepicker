@@ -42,7 +42,7 @@ export class DatePickerComponent implements OnInit, ControlValueAccessor {
 	invalid: boolean;
 
 	get formattedDate() {
-		return this.dateService.formatMMDDYYYY(this.selectedDate);
+		return this.dateService.formatDDMMYYYY(this.selectedDate);
 	}
 
 	get mobileFormattedDate() {
