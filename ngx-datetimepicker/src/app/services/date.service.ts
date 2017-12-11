@@ -39,8 +39,15 @@ export class DateService {
 		}
 		return `${(date.getMonth() + 1)}/${date.getDate()}/${date.getFullYear()}`;
 	}
+formatDDMMYYYY(date: Date): string {
+		if (!date || typeof date == 'string') {
+			return '';
+		}
+		return `${date.getDate()}/${(date.getMonth() + 1)}/${date.getFullYear()}`;
+	}
 
-
+    
+    
 	formatMMDDYYYY_HHMM_AMPM(date: Date): string {
 		if (!date || typeof date == 'string') {
 			return '';
